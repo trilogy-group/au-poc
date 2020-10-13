@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Architecture Update - template</title>
+    <script>
+        class elm extends HTMLElement {
+            constructor() {
+                super();
+            }
+        }
+
+        <!-- au-header -->
+        customElements.define('au-header', elm);
+        customElements.define('product-name', elm);
+        customElements.define('milestone', elm);
+        customElements.define('author', elm);
+        customElements.define('full-name', elm);
+        customElements.define('email', elm);
+        customElements.define('pca', elm);
+        customElements.define('fqa', elm);
+        customElements.define('reviewer', elm);
+        customElements.define('p2-spec', elm);
+        customElements.define('p1-spec', elm);
+        customElements.define('jira-id', elm);
+        customElements.define('product-architecture', elm);
+
+        <!-- p1-summary -->
+        customElements.define('p1-summary', elm);
+        customElements.define('executive-summary', elm);
+        customElements.define('useful-links', elm);
+        customElements.define('milestone-dependencies', elm);
+        customElements.define('milestone-name', elm);
+        customElements.define('milestone-url', elm);
+
+        <!-- tdds -->
+
+
+        <!-- implementation-risks -->
+
+        <!-- acs -->
+
+        <!-- arch-changes -->
+
+        <!-- fqa -->
+
+        <!-- fs -->
+
+    </script>
+</head>
+<body>
+
+<au version="1.0">
+    <title>Architecture Update - template</title>
+
+    <!-- au-header -->
+    <au-header>
+        <jira-id href=""></jira-id>
+        <product></product>
+        <product-architecture href=""></product-architecture>
+        <milestone></milestone>
+        <author email=""></author>
+        <pca email=""></pca>
+        <fqa email=""></fqa>
+        <reviewer email=""></reviewer>
+        <p2-spec>
+            <a href=""></a>
+            <jira-id href=""></jira-id>
+        </p2-spec>
+        <p1-spec>
+            <a href=""></a>
+            <jira-id href=""></jira-id>
+        </p1-spec>
+    </au-header>
+
+    <!-- p1-summary -->
+    <p1-summary>
+        <description></description>
+        <useful-links>
+            <a href=""></a>
+            <a href=""></a>
+        </useful-links>
+        <dependencies>
+            <p1-spec>
+                <a href=""></a>
+                <jira-id href=""></jira-id>
+            </p1-spec>
+            <p1-spec>
+                <a href=""></a>
+                <jira-id href=""></jira-id>
+            </p1-spec>
+        </dependencies>
+    </p1-summary>
+
+    <!-- tdds -->
+    <tdd-groups>
+        <tdd-group>
+            <context></context>
+            <tdds>
+                <tdd id=""></tdd>
+                <tdd id=""></tdd>
+            </tdds>
+            <itds>
+                <itd id=""></itd>
+                <itd id=""></itd>
+            </itds>
+            <arch-components>
+                <arch-component level="" type=""></arch-component>
+                <arch-component level="" type=""></arch-component>
+            </arch-components>
+        </tdd-group>
+        <tdd-group>
+            <context></context>
+            <tdds>
+                <tdd id=""></tdd>
+                <tdd id=""></tdd>
+            </tdds>
+            <itds>
+                <itd id=""></itd>
+                <itd id=""></itd>
+            </itds>
+            <arch-components>
+                <arch-component level="" type=""></arch-component>
+                <arch-component level="" type=""></arch-component>
+            </arch-components>
+        </tdd-group>
+    </tdd-groups>
+
+    <!-- implementation-risks -->
+    <implementation-risks>
+        <risk>
+            <level></level>
+            <description></description>
+            <impact></impact>
+            <mitigation></mitigation>
+        </risk>
+        <risk>
+            <level></level>
+            <description></description>
+            <impact></impact>
+            <mitigation></mitigation>
+        </risk>
+    </implementation-risks>
+
+    <!-- acs -->
+    <acceptance-criteria>
+        <capability id="" spec="">
+            <name></name>
+            <prerequisites>
+                <prerequisite></prerequisite>
+                <prerequisite></prerequisite>
+            </prerequisites>
+            <requirements>
+                <requirement></requirement>
+                <requirement></requirement>
+            </requirements>
+            <deliverables>
+                <deliverable id="">
+                    <steps>
+                        <step id=""></step>
+                        <step id=""></step>
+                    </steps>
+                </deliverable>
+                <deliverable id="">
+                    <steps>
+                        <step id=""></step>
+                        <step id=""></step>
+                    </steps>
+                </deliverable>
+            </deliverables>
+        </capability>
+        <capability id="" spec="">
+            <name></name>
+            <prerequisites>
+                <prerequisite></prerequisite>
+                <prerequisite></prerequisite>
+            </prerequisites>
+            <requirements>
+                <requirement></requirement>
+                <requirement></requirement>
+            </requirements>
+            <deliverables>
+                <deliverable id="">
+                    <steps>
+                        <step id=""></step>
+                        <step id=""></step>
+                    </steps>
+                </deliverable>
+                <deliverable id="">
+                    <steps>
+                        <step id=""></step>
+                        <step id=""></step>
+                    </steps>
+                </deliverable>
+            </deliverables>
+        </capability>
+    </acceptance-criteria>
+
+    <!-- arch-changes -->
+    <architecture-changes>
+        <change>
+            <caused-by></caused-by>
+            <consequences></consequences>
+        </change>
+        <change>
+            <caused-by></caused-by>
+            <consequences></consequences>
+        </change>
+    </architecture-changes>
+
+    <!-- fqa -->
+    <fqa>
+        <regression-risks>
+            <jira-id href=""></jira-id>
+            <jira-id href=""></jira-id>
+        </regression-risks>
+        <testing-dependencies>
+            <jira-id href=""></jira-id>
+            <jira-id href=""></jira-id>
+        </testing-dependencies>
+        <e2e-scenarios>
+            <jira-id href=""></jira-id>
+            <jira-id href=""></jira-id>
+        </e2e-scenarios>
+    </fqa>
+
+    <!-- fs -->
+    <epic>
+        <jira-id href=""></jira-id>
+        <stories>
+            <story>
+                <jira-id href=""></jira-id>
+                <summary></summary>
+                <feature-file href="" pr-href=""></feature-file>
+                <tdds>
+                    <tdd id=""></tdd>
+                    <tdd id=""></tdd>
+                </tdds>
+                <itds>
+                    <itd id=""></itd>
+                    <itd id=""></itd>
+                </itds>
+                <deliverables>
+                    <deliverable id="">
+                        <steps>
+                            <step id=""></step>
+                            <step id=""></step>
+                        </steps>
+                    </deliverable>
+                    <deliverable id="">
+                        <steps>
+                            <step id=""></step>
+                            <step id=""></step>
+                        </steps>
+                    </deliverable>
+                </deliverables>
+            </story>
+            <story>
+                <jira-id href=""></jira-id>
+                <summary></summary>
+                <feature-file href="" pull-request=""></feature-file>
+                <tdds>
+                    <tdd id=""></tdd>
+                    <tdd id=""></tdd>
+                </tdds>
+                <itds>
+                    <itd id=""></itd>
+                    <itd id=""></itd>
+                </itds>
+                <deliverables>
+                    <deliverable id="">
+                        <steps>
+                            <step id=""></step>
+                            <step id=""></step>
+                        </steps>
+                    </deliverable>
+                    <deliverable id="">
+                        <steps>
+                            <step id=""></step>
+                            <step id=""></step>
+                        </steps>
+                    </deliverable>
+                </deliverables>
+            </story>
+        </stories>
+    </epic>
+</au>
+
+</body>
+</html>
